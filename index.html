@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotify Clone</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html">
+					<img src="logo.svg" alt="" />
+				</a>
+			</div>
+			<div class="options">
+				<button class="home-button hover-button">
+					<img src="home.svg" />
+				</button>
+
+				<div class="searchbar">
+					<form class="searchform flex">
+						<div class="searchicon">
+							<img class="searchimg" src="search.svg" alt="" />
+						</div>
+
+						<input
+							class="search"
+							type="search"
+							placeholder="What do you want to play?" />
+
+						<div class="browseicon flex">
+							<button class="hover-button">
+								<img src="browse.svg" alt="" />
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="signup">
+				<button id="signup-btn" class="hover-button">Sign up</button>
+				<button id="login-btn" class="hover-button">Log in</button>
+			</div>
+		</div>
+		<div class="container">
+			<div class="left">
+				<div class="left-main">
+					<div class="library-header">
+						<button class="library-btn flex">
+							<img src="library.svg" alt="" />
+							Your Library
+						</button>
+						<button class="plus-btn flex">
+							<img src="plus.svg" alt="" />
+						</button>
+					</div>
+					<div class="left-scroll-container scroll">
+						<div class="left-scroll">
+							<span><h4>Create your first playlist</h4></span>
+							<span><p>It's easy, we'll help you</p></span>
+							<button class="hover-button">Create playlist</button>
+						</div>
+						<div class="left-scroll">
+							<span><h4>Let's find some podcasts to follow</h4></span>
+							<span><p>We'll keep you updated on new episodes</p></span>
+							<button class="hover-button">Browse podcasts</button>
+						</div>
+					</div>
+				</div>
+				<div class="left-footer">
+					<div class="link-container">
+						<div>
+							<a draggable="false" href="https://www.spotify.com/in-en/legal/">
+								Legal
+							</a>
+						</div>
+						<div>
+							<a
+								draggable="false"
+								href="https://www.spotify.com/in-en/safetyandprivacy/">
+								Safety & Privacy Center
+							</a>
+						</div>
+						<div>
+							<a
+								draggable="false"
+								href="https://www.spotify.com/in-en/legal/privacy-policy/">
+								Privacy Policy
+							</a>
+						</div>
+						<div>
+							<a
+								draggable="false"
+								href="https://www.spotify.com/in-en/legal/cookies-policy/">
+								Cookies
+							</a>
+						</div>
+						<div>
+							<a
+								draggable="false"
+								href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+								About Ads
+							</a>
+						</div>
+						<div>
+							<a
+								draggable="false"
+								href="https://www.spotify.com/in-en/accessibility/">
+								Accessibility
+							</a>
+						</div>
+					</div>
+					<div class="cookies-link">
+						<a
+							draggable="false"
+							href="https://www.spotify.com/legal/cookies-policy/">
+							Cookies
+						</a>
+					</div>
+					<div class="lang-btn">
+						<button class="hover-button">
+							<img src="globe.svg" alt="" />
+							English
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="right scroll">
+				<div class="popular-artists">
+					<div class="right-headers">
+						<a href="">
+							<h2>Popular artists</h2>
+						</a>
+						<a href="">Show all</a>
+					</div>
+					<div class="right-gridbox">
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popular-albums">
+					<div class="right-headers">
+						<a href="">
+							<h2>Popular albums</h2>
+						</a>
+						<a href="">Show all</a>
+					</div>
+					<div class="right-gridbox">
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popular-radio">
+					<div class="right-headers">
+						<a href="">
+							<h2>Popular radio</h2>
+						</a>
+						<a href="">Show all</a>
+					</div>
+					<div class="right-gridbox">
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-charts">
+					<div class="right-headers">
+						<a href="">
+							<h2>Featured charts</h2>
+						</a>
+						<a href="">Show all</a>
+					</div>
+					<div class="right-gridbox">
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="spotify-playlists">
+					<div class="right-headers">
+						<a href="">
+							<h2>Spotify playlists</h2>
+						</a>
+						<a href="">Show all</a>
+					</div>
+					<div class="right-gridbox">
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image-box">
+								<div class="image">
+									<img
+										aria-hidden="false"
+										draggable="false"
+										loading="lazy"
+										src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+										alt="" />
+								</div>
+								<div class="playbtn">
+									<img src="play.svg" alt="" />
+								</div>
+							</div>
+							<div class="info-box">
+								<a draggable="false" href="">Pritam</a>
+								<p>Artist</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right-footer">
+					<div class="footer-up">
+						<div class="right-links">
+							<div class="links-div">
+								<h4>Company</h4>
+								<ul>
+									<li>
+										<a href="https://www.spotify.com/in-en/about-us/contact/">
+											About
+										</a>
+									</li>
+									<li><a href="https://www.lifeatspotify.com/">Jobs</a></li>
+									<li>
+										<a href="https://newsroom.spotify.com/">For the Record</a>
+									</li>
+								</ul>
+							</div>
+							<div class="links-div">
+								<h4>Communities</h4>
+								<ul>
+									<li>
+										<a href="https://artists.spotify.com/">For Artists</a>
+									</li>
+									<li>
+										<a href="https://developer.spotify.com/">Developers</a>
+									</li>
+									<li><a href="https://ads.spotify.com/">Advertising</a></li>
+									<li>
+										<a href="https://investors.spotify.com/">Investors</a>
+									</li>
+									<li><a href="https://spotifyforvendors.com/">Vendors</a></li>
+								</ul>
+							</div>
+							<div class="links-div">
+								<h4>Useful links</h4>
+								<ul>
+									<li><a href="https://support.spotify.com/">Support</a></li>
+									<li>
+										<a href="https://www.spotify.com/in-en/free/">
+											Free Mobile App
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="links-div">
+								<h4>Spotify Plans</h4>
+								<ul>
+									<li>
+										<a
+											href="https://www.spotify.com/in-en/premium/?ref=spotifycom_footer_premium_individual">
+											Premium Individual
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.spotify.com/in-en/duo/?ref=spotifycom_footer_premium_duo">
+											Premium Duo
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.spotify.com/in-en/family/?ref=spotifycom_footer_premium_family">
+											Premium Family
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.spotify.com/in-en/student/?ref=spotifycom_footer_premium_student">
+											Premium Student
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.spotify.com/in-en/free/?ref=spotifycom_footer_free">
+											Spotify Free
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="right-social-links">
+							<button class="social-button">
+								<img src="insta.svg" />
+							</button>
+							<button class="social-button">
+								<img src="twitter.svg" />
+							</button>
+							<button class="social-button">
+								<img src="facebook.svg" />
+							</button>
+						</div>
+					</div>
+					<hr />
+					<div class="footer-down">
+						<div class="copyright">
+							<p>© 2024 Kinshuk - Spotify AB</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-text">
+				<h5>Preview of Spotify</h5>
+				<p>
+					Sign up to get unlimited songs and podcasts with occasional ads. No
+					credit card needed.
+				</p>
+			</div>
+			<button class="hover-button"><p>Sign up free</p></button>
+		</div>
+
+		<script src="scroll.js"></script>
+	</body>
+</html>
