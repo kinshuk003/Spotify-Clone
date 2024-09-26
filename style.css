@@ -606,8 +606,12 @@ body::-webkit-scrollbar-track {
 	border-radius: 0.5rem;
 }
 
+.popular-albums .card {
+	height: 284px;
+}
 .card {
-	height: 257.55px;
+	height: 240px;
+	box-sizing: border-box;
 }
 
 .popular-artists .card {
@@ -617,15 +621,17 @@ body::-webkit-scrollbar-track {
 .popular-artists .image {
 	height: 165px;
 }
+
 .image {
-	height: 160.9px;
+	height: 165.35px;
 }
 
 .image img {
-	height: 160.9px;
-	width: 160.9px;
+	height: 165.35px;
+	width: 165.35px;
 	border-radius: 0.25rem;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+	object-fit: cover;
 }
 
 .popular-artists .image img {
@@ -687,4 +693,14 @@ body::-webkit-scrollbar-track {
 	opacity: 1;
 	bottom: 8px;
 	transition: all 0.2s ease-out;
+}
+
+.card p {
+	padding-right: 8px;
+	font-size: 13.5px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
